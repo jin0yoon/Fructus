@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45F363BC26A90B0600C6A762 /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F363BB26A90B0600C6A762 /* LazyVGridView.swift */; };
 		45FC7EF326A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC7EF226A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift */; };
 		45FC7EF526A3E2EB005CC6F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC7EF426A3E2EB005CC6F3 /* ContentView.swift */; };
 		45FC7EF726A3E2EB005CC6F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FC7EF626A3E2EB005CC6F3 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45F363BB26A90B0600C6A762 /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
 		45FC7EEF26A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPrototypingPlaygroundBookBaseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FC7EF226A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift; sourceTree = "<group>"; };
 		45FC7EF426A3E2EB005CC6F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				45FC7EF226A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift */,
 				45FC7EF426A3E2EB005CC6F3 /* ContentView.swift */,
+				45F363BB26A90B0600C6A762 /* LazyVGridView.swift */,
 				45FC7EF626A3E2EB005CC6F3 /* Assets.xcassets */,
 				45FC7EFB26A3E2EB005CC6F3 /* Info.plist */,
 				45FC7EF826A3E2EB005CC6F3 /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F363BC26A90B0600C6A762 /* LazyVGridView.swift in Sources */,
 				45FC7EF526A3E2EB005CC6F3 /* ContentView.swift in Sources */,
 				45FC7EF326A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift in Sources */,
 			);
