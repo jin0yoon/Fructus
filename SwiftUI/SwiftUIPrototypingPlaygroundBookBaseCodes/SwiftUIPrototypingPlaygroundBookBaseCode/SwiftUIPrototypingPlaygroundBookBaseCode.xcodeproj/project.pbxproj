@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4502CD2F26AD60D8005033BF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4502CD2E26AD60D8005033BF /* ProfileView.swift */; };
 		45F363BC26A90B0600C6A762 /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F363BB26A90B0600C6A762 /* LazyVGridView.swift */; };
 		45FC7EF326A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC7EF226A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift */; };
 		45FC7EF526A3E2EB005CC6F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC7EF426A3E2EB005CC6F3 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4502CD2E26AD60D8005033BF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		45F363BB26A90B0600C6A762 /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
 		45FC7EEF26A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPrototypingPlaygroundBookBaseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FC7EF226A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4502CD2D26AD60C1005033BF /* Chapter1 */ = {
+			isa = PBXGroup;
+			children = (
+				4502CD2E26AD60D8005033BF /* ProfileView.swift */,
+			);
+			path = Chapter1;
+			sourceTree = "<group>";
+		};
 		45FC7EE626A3E2EB005CC6F3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		45FC7EF126A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCode */ = {
 			isa = PBXGroup;
 			children = (
+				4502CD2D26AD60C1005033BF /* Chapter1 */,
 				45FC7EF226A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift */,
 				45FC7EF426A3E2EB005CC6F3 /* ContentView.swift */,
 				45F363BB26A90B0600C6A762 /* LazyVGridView.swift */,
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4502CD2F26AD60D8005033BF /* ProfileView.swift in Sources */,
 				45F363BC26A90B0600C6A762 /* LazyVGridView.swift in Sources */,
 				45FC7EF526A3E2EB005CC6F3 /* ContentView.swift in Sources */,
 				45FC7EF326A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift in Sources */,
