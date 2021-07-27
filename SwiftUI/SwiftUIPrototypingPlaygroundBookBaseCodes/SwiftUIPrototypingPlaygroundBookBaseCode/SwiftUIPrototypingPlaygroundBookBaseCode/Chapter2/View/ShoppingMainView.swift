@@ -11,6 +11,7 @@ struct ShoppingMainView: View {
     
     @State private var selected = tabs[0]
     @Namespace var animation
+    @State private var isShow = false
     
     var body: some View {
         NavigationView{
@@ -38,7 +39,11 @@ struct ShoppingMainView: View {
                             HStack{
                                 ForEach(items.sorted{$0.rating > $1.rating}){item in
                                     //CardView
-                                    CardView(item: item, animation: animation)
+                                    NavigationLink(
+                                        destination: ShoppingDetailView(selectedItem: item, animation: animation),
+                                        label: {
+                                            CardView(item: item, animation: animation)
+                                        })
                                 }
                             }
                         }
@@ -51,9 +56,13 @@ struct ShoppingMainView: View {
                         //신규상품목록
                         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: 2), spacing: 25){
                             
-                            ForEach(items){item in
+                            ForEach(items.shuffled()){item in
                                 //CardView
-                                CardView(item: item, animation: animation)
+                                NavigationLink(
+                                    destination: ShoppingDetailView(selectedItem: item, animation: animation),
+                                    label: {
+                                        CardView(item: item, animation: animation)
+                                    })
                             }
                         }
                     }
@@ -82,6 +91,27 @@ struct ShoppingMainView: View {
             })
         }
         
+    }
+}
+
+struct ShoppingDetailView : View {
+    var selectedItem: Item
+    
+    var animation: Namespace.ID
+    
+    var body: some View{
+        VStack {
+            Image(selectedItem.image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding()
+            
+            Text(selectedItem.title)
+                .font(.title)
+                .fontWeight(.heavy)
+                .foregroundColor(.black)
+            
+        }
     }
 }
 
@@ -151,6 +181,25 @@ struct CardView: View {
         }
     }
 }
+
+struct Item: Identifiable {
+    var id = UUID().uuidString
+    var title: String
+    var price: String
+    var rating: String
+    var image: String
+    var colors: [String]
+    var size: [String]
+}
+
+var items = [
+    Item(title: "3 colors knit", price: "54,000", rating: "4.9", image: "c2_item1", colors: ["white", "brown", "olive"], size: ["S", "M", "L", "XL"]),
+    Item(title: "4 colors T shirts", price: "27,000", rating: "4.3", image: "c2_item2", colors: ["white", "black", "navy", "stripe"], size: ["S", "M", "L", "XL"]),
+    Item(title: "Sleeveless shirts", price: "36,000", rating: "4.2", image: "c2_item3", colors: ["black", "navy"], size: ["S", "M", "L", "XL"]),
+    Item(title: "6 colors Round T shirts", price: "29,900", rating: "3.8", image: "c2_item4", colors: ["white", "red", "wine", "blue", "yellow", "dark-gray"], size: ["S", "M", "L", "XL"]),
+    Item(title: "Short Knit", price: "39,900", rating: "4.0", image: "c2_item5", colors: ["white", "brown", "gray"], size: ["S", "M", "L", "XL"]),
+    Item(title: "Basic T shirts", price: "18,900", rating: "4.1", image: "c2_item6", colors: ["white", "gray", "black"], size: ["S", "M", "L", "XL"])
+]
 
 extension Color {
 //    static let cyon = Color(red: 26 / 255, green: 232 / 255, blue: 212 / 255)
