@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4502CD2F26AD60D8005033BF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4502CD2E26AD60D8005033BF /* ProfileView.swift */; };
+		456B25E126B12FD4001044DE /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456B25E026B12FD4001044DE /* LazyHGridView.swift */; };
+		456B25E326B13168001044DE /* GroupBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456B25E226B13168001044DE /* GroupBoxView.swift */; };
+		456B25E526B1318E001044DE /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456B25E426B1318E001044DE /* OutlineGroupView.swift */; };
+		456B25E726B131AB001044DE /* SpacerDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456B25E626B131AB001044DE /* SpacerDivider.swift */; };
+		456B25EA26B131CC001044DE /* AnimalMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456B25E926B131CC001044DE /* AnimalMainView.swift */; };
+		456B25ED26B131FA001044DE /* AnimationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456B25EC26B131FA001044DE /* AnimationMainView.swift */; };
 		45CBC41226AE3A5D00EED4D2 /* ShoppingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CBC41126AE3A5D00EED4D2 /* ShoppingMainView.swift */; };
 		45F363BC26A90B0600C6A762 /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F363BB26A90B0600C6A762 /* LazyVGridView.swift */; };
 		45FC7EF326A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC7EF226A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift */; };
@@ -18,6 +24,12 @@
 
 /* Begin PBXFileReference section */
 		4502CD2E26AD60D8005033BF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		456B25E026B12FD4001044DE /* LazyHGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView.swift; sourceTree = "<group>"; };
+		456B25E226B13168001044DE /* GroupBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxView.swift; sourceTree = "<group>"; };
+		456B25E426B1318E001044DE /* OutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupView.swift; sourceTree = "<group>"; };
+		456B25E626B131AB001044DE /* SpacerDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerDivider.swift; sourceTree = "<group>"; };
+		456B25E926B131CC001044DE /* AnimalMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalMainView.swift; sourceTree = "<group>"; };
+		456B25EC26B131FA001044DE /* AnimationMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
 		45CBC41126AE3A5D00EED4D2 /* ShoppingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingMainView.swift; sourceTree = "<group>"; };
 		45F363BB26A90B0600C6A762 /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
 		45FC7EEF26A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPrototypingPlaygroundBookBaseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,20 +59,28 @@
 			path = Chapter1;
 			sourceTree = "<group>";
 		};
-		45CBC41026AE3A4C00EED4D2 /* Chapter2 */ = {
+		456B25E826B131C0001044DE /* Animal */ = {
 			isa = PBXGroup;
 			children = (
-				45CBC41326AE3F5900EED4D2 /* View */,
+				456B25E926B131CC001044DE /* AnimalMainView.swift */,
 			);
-			path = Chapter2;
+			path = Animal;
 			sourceTree = "<group>";
 		};
-		45CBC41326AE3F5900EED4D2 /* View */ = {
+		456B25EB26B131ED001044DE /* Chapter3 */ = {
+			isa = PBXGroup;
+			children = (
+				456B25EC26B131FA001044DE /* AnimationMainView.swift */,
+			);
+			path = Chapter3;
+			sourceTree = "<group>";
+		};
+		45CBC41026AE3A4C00EED4D2 /* Chapter2 */ = {
 			isa = PBXGroup;
 			children = (
 				45CBC41126AE3A5D00EED4D2 /* ShoppingMainView.swift */,
 			);
-			path = View;
+			path = Chapter2;
 			sourceTree = "<group>";
 		};
 		45FC7EE626A3E2EB005CC6F3 = {
@@ -82,11 +102,17 @@
 		45FC7EF126A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCode */ = {
 			isa = PBXGroup;
 			children = (
-				45CBC41026AE3A4C00EED4D2 /* Chapter2 */,
 				4502CD2D26AD60C1005033BF /* Chapter1 */,
+				45CBC41026AE3A4C00EED4D2 /* Chapter2 */,
+				456B25EB26B131ED001044DE /* Chapter3 */,
+				456B25E826B131C0001044DE /* Animal */,
 				45FC7EF226A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift */,
 				45FC7EF426A3E2EB005CC6F3 /* ContentView.swift */,
 				45F363BB26A90B0600C6A762 /* LazyVGridView.swift */,
+				456B25E026B12FD4001044DE /* LazyHGridView.swift */,
+				456B25E226B13168001044DE /* GroupBoxView.swift */,
+				456B25E426B1318E001044DE /* OutlineGroupView.swift */,
+				456B25E626B131AB001044DE /* SpacerDivider.swift */,
 				45FC7EF626A3E2EB005CC6F3 /* Assets.xcassets */,
 				45FC7EFB26A3E2EB005CC6F3 /* Info.plist */,
 				45FC7EF826A3E2EB005CC6F3 /* Preview Content */,
@@ -171,10 +197,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456B25E326B13168001044DE /* GroupBoxView.swift in Sources */,
+				456B25EA26B131CC001044DE /* AnimalMainView.swift in Sources */,
+				456B25E526B1318E001044DE /* OutlineGroupView.swift in Sources */,
 				4502CD2F26AD60D8005033BF /* ProfileView.swift in Sources */,
 				45F363BC26A90B0600C6A762 /* LazyVGridView.swift in Sources */,
 				45CBC41226AE3A5D00EED4D2 /* ShoppingMainView.swift in Sources */,
+				456B25E126B12FD4001044DE /* LazyHGridView.swift in Sources */,
+				456B25ED26B131FA001044DE /* AnimationMainView.swift in Sources */,
 				45FC7EF526A3E2EB005CC6F3 /* ContentView.swift in Sources */,
+				456B25E726B131AB001044DE /* SpacerDivider.swift in Sources */,
 				45FC7EF326A3E2EB005CC6F3 /* SwiftUIPrototypingPlaygroundBookBaseCodeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
