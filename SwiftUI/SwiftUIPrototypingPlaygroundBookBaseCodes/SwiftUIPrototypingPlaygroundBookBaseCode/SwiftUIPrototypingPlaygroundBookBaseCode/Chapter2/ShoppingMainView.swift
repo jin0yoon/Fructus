@@ -116,7 +116,7 @@ struct ShoppingMainView: View {
 }
 
 struct ShoppingCartView: View {
-    
+    @State private var buttonClicked = false
     
     var body: some View{
         VStack{
@@ -193,9 +193,9 @@ struct ShoppingCartView: View {
             
             
             Button(action:{
-                
+                self.buttonClicked.toggle()
             }){
-                Text("Buy Now")
+                Text(buttonClicked ? "Purchase completed" : "Purchase Now")
             }
             .buttonStyle(BuyButtonStyle())
         }
@@ -210,6 +210,8 @@ struct ShoppingDetailView : View {
     var animation: Namespace.ID
     
     @State private var selectedColor = "colors"
+    
+    @State private var buttonClicked = false
     
     var body: some View{
         VStack{
@@ -271,9 +273,9 @@ struct ShoppingDetailView : View {
                 .foregroundColor(.gray)
             
             Button(action:{
-                
+                self.buttonClicked.toggle()
             }){
-                Text("Buy Now")
+                Text(buttonClicked ? "Purchase completed" : "Purchase Now")
             }
             .buttonStyle(BuyButtonStyle())
             
