@@ -44,6 +44,7 @@ struct LazyVGridView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         self.gridLayout = Array(repeating: .init(.flexible()), count: self.gridLayout.count % 4 + 1)
+                        print("\(self.gridLayout.count), \(self.gridLayout.count % 4 + 1)")
                     }) {
                         Image(systemName: "square.grid.2x2")
                             .font(.title)

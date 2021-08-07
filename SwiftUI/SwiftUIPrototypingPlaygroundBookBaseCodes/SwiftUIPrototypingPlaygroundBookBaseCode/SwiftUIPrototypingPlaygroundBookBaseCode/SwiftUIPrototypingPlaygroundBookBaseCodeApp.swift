@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIPrototypingPlaygroundBookBaseCodeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LazyVGridView()
         }
     }
 }
