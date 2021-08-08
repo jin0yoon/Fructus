@@ -281,9 +281,7 @@ struct ShoppingDetailView : View {
             
             HStack(spacing: 20){
                 Button(action:{
-                    if !selectedItem.cart{
-                        myCart.append(MyCart(title: selectedItem.title, price: selectedItem.price, image: selectedItem.image, count: 1, color: selectedColor, size: "L"))
-                    }
+                    addCart(selectedItem: selectedItem, selectedColor: selectedColor)
                 }){
                     Text("Cart")
                 }
@@ -460,6 +458,13 @@ func totalSum(carts:[MyCart]) -> Int {
     }
     
     return prices.reduce(0, +)
+}
+
+func addCart(selectedItem: ShopItem, selectedColor: String) {
+    if !selectedItem.cart{
+        myCart.append(MyCart(title: selectedItem.title, price: selectedItem.price, image: selectedItem.image, count: 1, color: selectedColor, size: "L"))
+    }
+    print(myCart)
 }
 
 struct ShopItem: Identifiable {
