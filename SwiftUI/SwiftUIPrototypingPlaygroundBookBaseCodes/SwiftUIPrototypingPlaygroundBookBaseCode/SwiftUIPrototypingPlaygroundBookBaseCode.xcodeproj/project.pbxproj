@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4502CD2F26AD60D8005033BF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4502CD2E26AD60D8005033BF /* ProfileView.swift */; };
+		45267FFC26CA7AD1000BD463 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45267FFB26CA7AD1000BD463 /* Test.swift */; };
 		456B25E126B12FD4001044DE /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456B25E026B12FD4001044DE /* LazyHGridView.swift */; };
 		456B25E326B13168001044DE /* GroupBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456B25E226B13168001044DE /* GroupBoxView.swift */; };
 		456B25E526B1318E001044DE /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456B25E426B1318E001044DE /* OutlineGroupView.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		4502CD2E26AD60D8005033BF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		45267FFB26CA7AD1000BD463 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		456B25E026B12FD4001044DE /* LazyHGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView.swift; sourceTree = "<group>"; };
 		456B25E226B13168001044DE /* GroupBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxView.swift; sourceTree = "<group>"; };
 		456B25E426B1318E001044DE /* OutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				45FC7EF626A3E2EB005CC6F3 /* Assets.xcassets */,
 				45FC7EFB26A3E2EB005CC6F3 /* Info.plist */,
 				45FC7EF826A3E2EB005CC6F3 /* Preview Content */,
+				45267FFB26CA7AD1000BD463 /* Test.swift */,
 			);
 			path = SwiftUIPrototypingPlaygroundBookBaseCode;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				456B25E526B1318E001044DE /* OutlineGroupView.swift in Sources */,
 				4502CD2F26AD60D8005033BF /* ProfileView.swift in Sources */,
 				45F363BC26A90B0600C6A762 /* LazyVGridView.swift in Sources */,
+				45267FFC26CA7AD1000BD463 /* Test.swift in Sources */,
 				45CBC41226AE3A5D00EED4D2 /* ShoppingMainView.swift in Sources */,
 				456B25E126B12FD4001044DE /* LazyHGridView.swift in Sources */,
 				456B25ED26B131FA001044DE /* AnimationMainView.swift in Sources */,
