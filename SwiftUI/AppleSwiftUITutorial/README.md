@@ -10,6 +10,8 @@
 - view를 배치하기 위해 stack을 사용하여 이미지 및 텍스트 view를 결합합니다.
 - Mapkit을 사용하여 지도를 추가합니다.
 
+
+<Index>
 - Create a New Project and Explore the Canvas
 - Customize the Text View
 - Combine Views Using Stacks
@@ -18,6 +20,16 @@
 - Compose the Detail View
 
 ### Building Lists and Navigation
+
+<Index>
+- Create a Landmark Model
+- Create the Row View
+- Customize the Row Preview
+- Create the List of Landmarks
+- Make the List Dynamic
+- Set Up Navigation Between List and Detail
+- Pass Data into Child Views
+- Generate Previews Dynamically
 
 ### Handling User Input
 
