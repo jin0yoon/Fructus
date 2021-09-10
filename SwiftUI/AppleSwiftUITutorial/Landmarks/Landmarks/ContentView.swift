@@ -5,6 +5,10 @@
 //  Created by 윤진영 on 2021/09/08.
 //
 
+/*
+ 요소 -> Command + click -> inspector
+ */
+
 import SwiftUI
 
 struct ContentView: View {
